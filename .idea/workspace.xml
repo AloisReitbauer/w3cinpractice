@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15dc6ab1-ad5b-4962-a06a-438777bd3467" name="Default" comment="" />
+    <list default="true" id="15dc6ab1-ad5b-4962-a06a-438777bd3467" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/files/bookmarklet.html" afterPath="$PROJECT_DIR$/files/bookmarklet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/files/visibility.html" afterPath="$PROJECT_DIR$/files/visibility.html" />
+    </list>
     <ignored path="w3cinpractice.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,14 +26,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="bookmarklet.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="bookmarklet.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/files/bookmarklet.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="639">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="345">
+              <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
               <folding>
-                <marker date="1410552714000" expanded="true" signature="158:313" placeholder="{...}" />
+                <marker date="1410554656000" expanded="true" signature="287:442" placeholder="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="visibility.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/files/visibility.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.43661973" vertical-offset="36" max-vertical-offset="675">
+              <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -44,6 +57,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/files/bookmarklet.html" />
+        <option value="$PROJECT_DIR$/files/visibility.html" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="10" />
@@ -230,11 +251,19 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/files/bookmarklet.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="639">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="345">
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
           <folding>
-            <marker date="1410552714000" expanded="true" signature="158:313" placeholder="{...}" />
+            <marker date="1410554656000" expanded="true" signature="287:442" placeholder="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/visibility.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43661973" vertical-offset="36" max-vertical-offset="675">
+          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
