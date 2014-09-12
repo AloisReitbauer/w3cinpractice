@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15dc6ab1-ad5b-4962-a06a-438777bd3467" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/files/bookmarklet.html" afterPath="$PROJECT_DIR$/files/bookmarklet.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/files/visibility.html" afterPath="$PROJECT_DIR$/files/visibility.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/CORSRequest.js" afterPath="" />
     </list>
     <ignored path="w3cinpractice.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,12 +37,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="visibility.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="visibility.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/files/visibility.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43661973" vertical-offset="36" max-vertical-offset="675">
+            <state vertical-scroll-proportion="-11.625" vertical-offset="36" max-vertical-offset="675">
               <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cacheCheck.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/examples/cacheCheck.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.24886878" vertical-offset="0" max-vertical-offset="663">
+              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -261,9 +272,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/files/visibility.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43661973" vertical-offset="36" max-vertical-offset="675">
+        <state vertical-scroll-proportion="-11.625" vertical-offset="36" max-vertical-offset="675">
           <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/cacheCheck.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24886878" vertical-offset="0" max-vertical-offset="663">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
