@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>CORS Request</title>
+</head>
+<body>
+
+
+<h2>Cached Steve</h2>
+<img src="cachedSteve.jpg" prio='high'/>
+
+<h2> Steve</h2>
+<h2>How fast is Steve?</h2>
+<img src="steve.jpg" prio='high'/>
+
+
+<script>
+  function createCORSRequest(method, url) {
+    var xhr = new XMLHttpRequest();
+    if ("withCredentials" in xhr) {
+      xhr.open(method, url, true);
+    } else if (typeof XDomainRequest != "undefined") {
+      xhr = new XDomainRequest();
+      xhr.open(method, url);
+    } else {
+      xhr = null;
+    }
+    return xhr;
+  }
+
+  // Helper method to parse the title tag from the response.
+  function getTitle(text) {
+    return text.match('<title>(.*)?</title>')[1];
+  }
+
+  // Make the actual CORS request.
+  function makeCorsRequest() {
+    var url = 'http://localhost:3000/beacon';
+    var xhr = createCORSRequest('POST', url);
+    if (!xhr) {
+      console.error('CORS not supported');
+      return;
+    }
+    xhr.onload = function() {
+      var text = xhr.responseText;
+      var title = getTitle(text);
+      alert('Response from CORS request to ' + url + ': ' + title);
+    };
+
+    xhr.onerror = function() {
+      alert('Woops, there was an error making the request.');
+    };
+    var entries = performance.getEntries();
+    var json = JSON.stringify(entries);
+    xhr.send(json);
+  }
+  //setTimeout(makeCorsRequest(), 40000);
+</script>
+</body>
+</html>

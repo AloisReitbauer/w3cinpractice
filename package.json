@@ -1,0 +1,8 @@
+{
+  "name": "W3CExample",
+  "version": "0.0.1",
+  "dependencies": {
+    "socket.io" : "~0.9.6",
+    "mime": "~1.2.7"
+  }
+}
