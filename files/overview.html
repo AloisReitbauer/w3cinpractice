@@ -23,9 +23,11 @@
 <p class="lead">Examples on how to apply W3C Web Performance APIs to different use cases</p>
 <p>
 <dl class="list-unstyled">
+
   <h3>Navigation Timing</h3>
   <dt>Measuring page load time</dt>
   <dd>Pick any page and use this <a href="./examples/loadTime.html">sample code</a></dd>
+
   <h3>Resource Timing</h3>
   <dt>Measuring resource load time</dt>
   <dd>Use <a href="./resourceTiming.html">this example</a> and run the following
@@ -42,12 +44,21 @@
   <dt>Create a waterfall chart</dt>
   <dd>Use the <a href="./bookmarklet.html">Resource Timing Bookmarklet</a> to send resource timing data to a server and
       view it in a <a href="./waterfall.html">waterfall chart</a> </dd>
+
   <h3>User Timing</h3>
   <dt>Timing JavaScript and Client/Server Events</dt>
-  <dd>Measuring an <a href="./clientServer.html">asynchronous client server interaction</a> </dd>
+  <dd>Measuring an <a href="./clientServer.html">asynchronous client server interaction</a> with
+    <a href="./examples/markMeasure.html">user timing</a> </dd>
+
+  <dt>Timing the execution time of a loaded file</dt>
+  <dd>Measuring the execution time of <a href="./jsExecution.html">JavaScript execution</a> using
+    <a href="./examples/jsExecution.html">user timing and some JavaScript</a> </dd>
+
   <h3>Putting it all together</h3>
   <dt>Measuring important content loading</dt>
-  <dd>Measuring an <a href="./clientServer.html">asynchronous client server interaction</a> </dd>
+  <dd>Measuring the important part of a <a href="./importantContent.html">page</a>
+      using <a href="./examples/importantContent.html">W3C performance data</a>.
+  </dd>
   <h3>Beyond Measurement</h3>
   <dt>Improve performance when users are not active</dt>
   <dd>Using Page Visibility to build a <a href="./visibility.html">page that reacts to being hidden</a></dd>

@@ -58,22 +58,29 @@ function send404(response){
 
 function serveStatic(response, absPath){
 
-  fs.exists(absPath, function(exists){
-    if (exists){
-      fs.readFile(absPath, function (err, data){
-        if (err){
+  if (absPath.indexOf('slow') != -1){
+    var startIndex = absPath.indexOf('slow');
+    absPath = absPath.replace('slow', '');
+    console.log("changed path " + absPath);
+    setTimeout(function(){serveStatic(response, absPath);}, 2000);
+  } else {
+  fs.exists(absPath, function(exists) {
+    if (exists) {
+      fs.readFile(absPath, function (err, data) {
+        if (err) {
           send404(response);
         }
         else {
           sendFile(response, absPath, data);
+          console.log("returning content " + absPath);
         }
       });
     }
     else {
       send404(response);
     }
-
   });
+  }
 
 }
 
@@ -85,7 +92,7 @@ function sendFile (response, filePath, fileContents) {
       {'content-type': mime.lookup(path.basename(filePath))
         // ,'Timing-Allow-Origin' : '*'
       });
-  } else {
+  }else {
     response.writeHead(
       200,
       {'Content-Type': mime.lookup(path.basename(filePath)),

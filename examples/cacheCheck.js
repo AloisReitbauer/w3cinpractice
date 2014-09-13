@@ -1,6 +1,4 @@
-/*
- *  Did an image come from cache?
- */
+
 
 var resourceList = window.performance.getEntriesByType("resource");
 for (i= 0; i < resourceList.length; i++){

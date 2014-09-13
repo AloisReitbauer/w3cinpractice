@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Timing the important part of a page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+  <h1>Timing the important part of a page</h1>
+  <p class="lead">
+    Using Resource Timing and Navigation Timing to calculate load time of important content
+  </p>
+  <h3>Code</h3>
+  <pre>
+    <strong>annotate your resources</strong>
+    &lt;img src="..." prio="high" &gt;
+
+    <strong>set a mark after important text</strong>
+    &lt;script&gt;performance.mark('mark_above_the_fold');&lt;/script&gt;
+
+    <strong>find all important pieces and get the timings</strong>
+    // first get above the fold time from markup
+    var doneLoading = performance.getEntriesByName('mark_above_the_fold')[0].startTime;
+
+    // iterate through DOM and get item timings
+    var elements = document.getElementsByTagName("*");
+    for (var i=0; i < elements.length; i++) {
+
+    }
+    console.log('Page was done loading ' + doneLoading.toFixed(2) + ' ms.');
+  </pre>
+</div>
+</body>
+</html>

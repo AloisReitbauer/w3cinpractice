@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Measuring interactions</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+  <h1>Measuring interactions</h1>
+  <p class="lead">
+    Measure and time any interaction on a page.
+  </p>
+  <h3>Code</h3>
+  <pre>
+    // mark the starting point
+    performance.mark('actionStart');
+
+    // measure time from start
+    performance.measure('actionTime', 'actionStart');
+
+    // retrieve timing data;
+    var perfEntries = performance.getEntriesByType("measure");
+    for(i = 0; i < perfEntries.length; i++){
+      console.log(perfEntries[i].name + ' took ' + perfEntries[i].duration.toFixed(2) + ' ms');
+    }
+  </pre>
+</div>
+</body>
+</html>
