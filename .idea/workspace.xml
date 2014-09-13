@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15dc6ab1-ad5b-4962-a06a-438777bd3467" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/files/examples/loadTime.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/files/d3.html" afterPath="$PROJECT_DIR$/files/waterfall.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/files/overview.html" afterPath="$PROJECT_DIR$/files/overview.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="w3cinpractice.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="overview.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="overview.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/files/overview.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.125" vertical-offset="45" max-vertical-offset="795">
-              <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.27272728" vertical-offset="327" max-vertical-offset="975">
+              <caret line="33" column="63" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -97,10 +99,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="workingdraft.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="workingdraft.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/files/workingdraft.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9718076" vertical-offset="194" max-vertical-offset="870">
+            <state vertical-scroll-proportion="-24.416666" vertical-offset="194" max-vertical-offset="870">
               <caret line="52" column="7" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
               <folding />
             </state>
@@ -140,8 +142,8 @@
         <option value="$PROJECT_DIR$/files/examples/resourceTime.html" />
         <option value="$PROJECT_DIR$/files/workingdraft.html" />
         <option value="$PROJECT_DIR$/files/index.html" />
-        <option value="$PROJECT_DIR$/files/overview.html" />
         <option value="$PROJECT_DIR$/files/examples/slowestResource.html" />
+        <option value="$PROJECT_DIR$/files/overview.html" />
       </list>
     </option>
   </component>
@@ -394,16 +396,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/files/bookmarklet.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="420">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="7" selection-end-column="93" />
-          <folding>
-            <marker date="1410574441000" expanded="true" signature="617:772" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/files/examples/loadTime.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="465">
@@ -436,14 +428,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/files/overview.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.125" vertical-offset="45" max-vertical-offset="795">
-          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/files/examples/slowestResource.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="555">
@@ -454,8 +438,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/files/workingdraft.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9718076" vertical-offset="194" max-vertical-offset="870">
+        <state vertical-scroll-proportion="-24.416666" vertical-offset="194" max-vertical-offset="870">
           <caret line="52" column="7" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/bookmarklet.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="420">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="7" selection-end-column="93" />
+          <folding>
+            <marker date="1410574441000" expanded="true" signature="617:772" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/overview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27272728" vertical-offset="327" max-vertical-offset="975">
+          <caret line="33" column="63" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="63" />
           <folding />
         </state>
       </provider>
