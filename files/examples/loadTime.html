@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Measuring page load time</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+  <h1>Measuring page load time</h1>
+  <p class="lead">
+    Measuring page load time using Navigation Timing
+  </p>
+  <h3>Code</h3>
+  <pre>
+    var timing= performance.timing;
+    var loadTime= (timing.loadEventEnd- timing.navigationStart)/1000;
+    console.log('Page took ' + loadTime.toFixed(2) + ' seconds to load');
+  </pre>
+</div>
+</body>
+</html>
