@@ -1,11 +1,4 @@
 
-// how long does it take to load a page?
-
-var timing = window.performance.timing;
-var loadTime = (timing.loadEventEnd - timing.navigationStart)/1000;
-alert ('Load time is ' + loadTime  + ' seconds');
-
-
 // which resource took the longest to load?
 var resourceList = window.performance.getEntriesByType("resource");
 for (i = 0; i < resourceList.length; i++){

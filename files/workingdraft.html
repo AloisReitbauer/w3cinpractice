@@ -5,9 +5,9 @@
   <title>W3C Performance Examples</title>
 </head>
 <body>
-<h1>W3C Web Performance -  - Resource Timing</h1>
+<h1>W3C Web Performance</h1>
 <p>
-  <a href="./resourceTiming.html">reload</a>
+  <a href="./index.html">reload</a>
 </p>
 <input type="BUTTON" value="Click me!" onclick="clickme();">
 <p id="reply">
@@ -37,5 +37,17 @@
     xmlhttp.open("GET","reply.txt",true);
     xmlhttp.send();
   }
+
+  var top = 0;
+  var resourceList = window.performance.getEntriesByType("resource");
+  resourceList.sort (function (a,b){return (a.duration - b.duration) * -1});
+  for (i = 0; i < resourceList.length && top < 10 ; i++){
+    if (resourceList[i].initiatorType == "img") {
+      ++top;
+      console.log('Load time ' + resourceList[i].name  +  ' is ' + ((resourceList[i].responseEnd - resourceList[i].startTime).toFixed(2) + ' ms'));
+    }
+  }
+
+
 </script>
 </html>

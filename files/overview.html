@@ -3,10 +3,11 @@
 <head lang="en">
   <meta charset="UTF-8">
   <title>W3C Web Performance - Example Overview</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
 
 <body>
 <div class="container">
@@ -14,11 +15,22 @@
 <h2>Examples</h2>
 <p class="lead">Examples on how to apply W3C Web Performance APIs to different use cases</p>
 <p>
-<ul class="list-unstyled">
-  <li><a href="./examples/loadTime.js">Page Loading</a></li>
+<dl class="list-unstyled">
+  <dt>Measuring page load time</dt>
+  <dd>Pick any page and use this <a href="./examples/loadTime.html">sample code</a></dd>
+  <dt>Measuring resource load time</dt>
+  <dd>Use <a href="./resourceTiming.html">this example</a> and run the following
+      <a href="./examples/resourceTime.html">code</a></dd>
+  <dt>Slowest 10 images on page</dt>
+  <dd>Use this <a href="./examples/slowestResource.html">sample code</a> to find the slowest images on a page</dd>
+  <li> <a href="./resourceTiming.html">Bad versus nice Third Parties</a> </li>
+  <li> <a href="./resourceTiming.html">Check for cache</a> </li>
+  <li> <a href="./resourceTiming.html">Failed to load</a> </li>
+  <li> <a href="./resourceTiming.html">Create a waterfall chart</a> </li>
   <li> <a href="./resourceTiming.html">Resource Timing</a> </li>
-  <li><a href="./bookmarklet.html">Bookmarklet</a></li>
-</ul>
+  <li><a href="./bookmarklet.html">Resource Timing Bookmarklet</a></li>
+  <li><a href="./bookmarklet.html">Page Visibility</a></li>
+</dl>
 
 </p>
 <h2>Specifications</h2>
