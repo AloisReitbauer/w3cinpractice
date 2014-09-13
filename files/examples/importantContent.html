@@ -26,11 +26,19 @@
     <strong>find all important pieces and get the timings</strong>
     // first get above the fold time from markup
     var doneLoading = performance.getEntriesByName('mark_above_the_fold')[0].startTime;
+    console.log ('Reaching content done at ' + doneLoading.toFixed(2) + ' ms.');
 
     // iterate through DOM and get item timings
-    var elements = document.getElementsByTagName("*");
+    var elements = document.getElementsByTagName("img");
     for (var i=0; i < elements.length; i++) {
-
+      if (elements[i].getAttribute('prio') != undefined){
+        var source = elements[i].getAttribute("src");
+        var doneTime = performance.getEntriesByName(source)[0].responseEnd;
+        console.log(source + ' took ' + doneTime.toFixed(2));
+        if(doneLoading < doneTime){
+          doneLoading = doneTime;
+        }
+      }
     }
     console.log('Page was done loading ' + doneLoading.toFixed(2) + ' ms.');
   </pre>
