@@ -10,3 +10,7 @@ for (i= 0; i < resourceList.length; i++){
     console.log('Resource ' + resourceList[i].name + ' was NOT cached.');
   }
 }
+
+
+var scripts = document.getElementsByTagName( 'script' );
+var thisScriptTag = scripts[ scripts.length - 1 ];

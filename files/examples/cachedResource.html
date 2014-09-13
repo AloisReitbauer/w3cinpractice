@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Check for cached resources</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+  <h1>Check for cached resources</h1>
+  <p class="lead">
+    Find potentially cached resources.
+  </p>
+  <h3>Code</h3>
+  <pre>
+    var resourceList = window.performance.getEntriesByType("resource");
+    for (i= 0; i < resourceList.length; i++){
+      if (resourceList[i].duration <= 0.0){
+        console.log('Resource ' + resourceList[i].name + ' was cached.');
+      } else{
+        console.log('Resource ' + resourceList[i].name + ' was NOT cached.');
+      }
+    }
+  </pre>
+</div>
+</body>
+</html>

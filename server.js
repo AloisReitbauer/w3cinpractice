@@ -82,7 +82,9 @@ function sendFile (response, filePath, fileContents) {
   if (filePath.indexOf('cached') == -1) {
     response.writeHead(
       200,
-      {'content-type': mime.lookup(path.basename(filePath))});
+      {'content-type': mime.lookup(path.basename(filePath))
+        // ,'Timing-Allow-Origin' : '*'
+      });
   } else {
     response.writeHead(
       200,
