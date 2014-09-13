@@ -1,5 +1,3 @@
-
-
 var http = require('http');
 var fs = require('fs');
 var path = require('path');
@@ -7,13 +5,10 @@ var mime = require('mime');
 
 var lastBeacon;
 
-
 // web server logic
-
 var server= http.createServer(function(request, response){
 
   var filePath= false;
-
   if(request.url == '/beacon'){
     handleBeacon (request, response);
   }
@@ -27,19 +22,14 @@ var server= http.createServer(function(request, response){
 });
 
 function handleBeacon (request, response){
-
   if (request.method == 'POST'){
-    console.log ('Post request');
     request.content= '';
     request.addListener("data", function(chunk) {
       request.content += chunk;
     });
-
     request.addListener("end", function() {
       lastBeacon =  request.content;
-      console.log(request.content);
     });
-
     response.writeHead(
       200,
       {'content-type': 'text/html',
@@ -49,7 +39,6 @@ function handleBeacon (request, response){
     response.end("<title>done</title>");
   }
   else {
-    console.log ('sending beacon');
     response.writeHead(
       200,
       {'content-type': 'text/html',
@@ -57,9 +46,6 @@ function handleBeacon (request, response){
       }
     );
     response.end("var data = " + lastBeacon);
-
-
-
   }
 }
 
@@ -93,14 +79,10 @@ function serveStatic(response, absPath){
 
 function sendFile (response, filePath, fileContents) {
 
-
   if (filePath.indexOf('cached') == -1) {
     response.writeHead(
       200,
-      {'content-type': mime.lookup(path.basename(filePath)),
-       'Access-Control-Allow-Origin' : '*'
-      }
-    );
+      {'content-type': mime.lookup(path.basename(filePath))});
   } else {
     response.writeHead(
       200,
@@ -112,8 +94,6 @@ function sendFile (response, filePath, fileContents) {
   response.end(fileContents);
 
 }
-
-
 
 // starting the server
 server.listen(3000);
