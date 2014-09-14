@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Housekeeping Bookmarklet</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+<h1>Housekeeping Bookmarklet</h1>
+<p>
+  This is a little bookmarklet allow to send resource timing via CORS to a server.
+</p>
+<a href="javascript: (function () {
+var jsCode = document.createElement('script');
+jsCode.setAttribute('src', 'http://localhost:3000/housekeeping.js');
+document.body.appendChild(jsCode);
+}());"><button type="button" class="btn btn-primary btn-lg" >W3C Optimize</button></a>
+</div>
+</body>
+</html>
