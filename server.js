@@ -36,7 +36,7 @@ function handleBeacon (request, response){
         'Access-Control-Allow-Origin' : '*'
       }
     );
-    response.end("<title>done</title>");
+    response.end("done");
   }
   else {
     response.writeHead(
