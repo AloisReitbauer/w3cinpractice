@@ -5,7 +5,6 @@
   <title>Measuring resource load time</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
 <body>
 
@@ -20,7 +19,8 @@
     var resourceList = window.performance.getEntriesByType("resource");
     for (i = 0; i < resourceList.length; i++){
       if (resourceList[i].initiatorType == "img") {
-        console.log('Load time is ' + (resourceList[i].responseEnd - resourceList[i].startTime + ' ms'));
+        console.log('Load time of ' + resourceList[i].name + ' is ' + 
+        (resourceList[i].responseEnd - resourceList[i].startTime + ' ms'));
       }
     }
   </pre>
